@@ -7,5 +7,5 @@ React elements for crodity
 
 ### Run
 
-```npm start``` or ```yarn start```
+```npm start``` or ```yarn start``` and open in your browser http://localhost:6060
 
