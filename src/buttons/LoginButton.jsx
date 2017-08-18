@@ -14,7 +14,6 @@ const styles = {
     borderRadius: 30,
   },
   label: {
-    // fontWeight: 500,
     color: 'white',
   },
   style: {
@@ -26,27 +25,17 @@ const styles = {
   },
 };
 
-const LoginButton = ({ className, ...props }) => (
+const LoginButton = ({ ...props }) => (
 
   <RaisedButton
-    className={className}
     {...props}
   />
 
 );
 
 LoginButton.propTypes = {
-  /** 
-  * Label
-  */
   label: PropTypes.string,
-  /** 
-  * Class name for button
-  */
   className: PropTypes.string,
-  /** 
-  * Default class name for button
-  */
   style: PropTypes.object,
   buttonStyle: PropTypes.object,
   labelStyle: PropTypes.object,
