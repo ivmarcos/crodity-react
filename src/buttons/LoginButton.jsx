@@ -26,10 +26,10 @@ const styles = {
   },
 };
 
-const LoginButton = ({ defaultClassName, className, ...props }) => (
+const LoginButton = ({ className, ...props }) => (
 
   <RaisedButton
-    className={[defaultClassName, className].join(' ')}
+    className={className}
     {...props}
   />
 
@@ -51,12 +51,10 @@ LoginButton.propTypes = {
   buttonStyle: PropTypes.object,
   labelStyle: PropTypes.object,
   rippleStyle: PropTypes.object,
-  defaultClassName: PropTypes.string,
 };
 
 LoginButton.defaultProps = {
-  className: null,
-  defaultClassName: 'crd-btn',
+  className: 'crd-btn',
   style: styles.style,
   buttonStyle: styles.button,
   labelStyle: styles.label,

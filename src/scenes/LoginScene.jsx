@@ -12,7 +12,8 @@ const LoginScene = () => (
     <div className="crd-login-social">
 
       <LoginSocialButton
-        label="Facebook"
+        label="connect with facebook"
+        className="crd-btn-fb"
       />
 
     </div>
@@ -20,7 +21,7 @@ const LoginScene = () => (
     <div className="crd-login-social">
 
       <LoginButton
-        label="Login"
+        className="crd-btn-sign"
       />
 
     </div>

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import LoginButton from './LoginButton';
 
-const LoginSocialButton = ({ defaultClassName, className, ...props }) => (
+const LoginSocialButton = ({ className, ...props }) => (
 
   <LoginButton
-    className={[defaultClassName, className].join(' ')}
+    className={className}
     {...props}
   />
 
@@ -14,12 +14,10 @@ const LoginSocialButton = ({ defaultClassName, className, ...props }) => (
 
 LoginSocialButton.propTypes = {
   className: PropTypes.string,
-  defaultClassName: PropTypes.string,
 };
 
 LoginSocialButton.defaultProps = {
   className: null,
-  defaultClassName: 'crd-button-social',
 };
 
 export default LoginSocialButton;
