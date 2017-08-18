@@ -1,0 +1,21 @@
+$crodity-button-login-radius: 30px;
+
+// override material-ui styles
+.crd-btn{
+  //border-radius: $crodity-button-login-radius !important;
+  & button{
+    //border-radius:  $crodity-button-login-radius !important;
+    //height: auto !important;
+    & div {
+      //border-radius:  $crodity-button-login-radius !important;
+      & span {
+        //border-radius:  $crodity-button-login-radius !important;
+        font-weight: 600 !important;
+      }
+      & div{ 
+       // border-radius:  $crodity-button-login-radius;
+       // padding: 15px;
+      }
+    }
+  }
+}

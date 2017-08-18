@@ -1,0 +1,5 @@
+```jsx
+<LoginSocialButton
+  label="Facebook"
+/>
+```
