@@ -4,26 +4,25 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import '../styles/_buttons.scss';
 
-
 const styles = {
   button: {
     height: 'auto',
-    borderRadius: 25,
+    borderRadius: 30,
   },
   overlay: {
     padding: 10,
-    borderRadius: 25,
+    borderRadius: 30,
   },
   label: {
-    fontWeight: 600,
-    color: 'red',
+    // fontWeight: 500,
+    color: 'white',
   },
   style: {
-    borderRadius: 25,
+    borderRadius: 30,
   },
   ripple: {
-    borderRadius: 25,
-    backgroundColor: 'red',
+    borderRadius: 30,
+    backgroundColor: 'white',
   },
 };
 
@@ -31,7 +30,6 @@ const LoginButton = ({ defaultClassName, className, ...props }) => (
 
   <RaisedButton
     className={[defaultClassName, className].join(' ')}
-    style={ty}
     {...props}
   />
 
@@ -49,15 +47,20 @@ LoginButton.propTypes = {
   /** 
   * Default class name for button
   */
-  style,
-  button,
-  label,
+  style: PropTypes.object,
+  buttonStyle: PropTypes.object,
+  labelStyle: PropTypes.object,
+  rippleStyle: PropTypes.object,
   defaultClassName: PropTypes.string,
 };
 
 LoginButton.defaultProps = {
   className: null,
   defaultClassName: 'crd-btn',
+  style: styles.style,
+  buttonStyle: styles.button,
+  labelStyle: styles.label,
+  rippleStyle: styles.ripple,
 };
 
 export default LoginButton;
