@@ -7,7 +7,7 @@ module.exports = {
   styleguideDir: 'public',
   title: 'Crodity elements',
   styleguideComponents: {
-    Wrapper: path.join(__dirname, 'lib/styleguide/Wrapper'),
+    Wrapper: path.join(__dirname, 'src/styleguide/Wrapper'),
   },
   webpackConfig: {
     module: {

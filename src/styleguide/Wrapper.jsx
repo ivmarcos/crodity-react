@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import '../fonts/fonts.css';
+import '../fonts/font-awesome.css';
 
 const Wrapper = ({ children }) => (
   <MuiThemeProvider>
