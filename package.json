@@ -1,17 +1,17 @@
 {
   "name": "crodity-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React elements for Crodity",
   "private": true,
   "scripts": {
-    "test": "mocha",
+    "test": "echo ''",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "start": "yarn run styleguide",
     "build": "yarn run styleguide:build",
     "release": "yarn version --new-version patch",
     "dev": "nodemon --watch src --exec 'yarn start'",
-    "preversion": "mocha",
+    "preversion": "yarn test",
     "version": "git add --all",
     "postversion": "git push"
   },
@@ -53,7 +53,6 @@
     "react-styleguidist": "^6.0.10",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.5.5"
+    "url-loader": "^0.5.9"
   }
 }

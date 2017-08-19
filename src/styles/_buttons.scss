@@ -10,6 +10,9 @@ $crodity-secondary-color: #dbbb55;
   & button{
     //border-radius:  $crodity-login-button-login-radius !important;
     //height: auto !important;
+    & :hover{
+      background-color: lighten($color, 10)
+    }
     & div {
       border-radius:  $crodity-login-button-login-radius !important;
       background-color: $color;

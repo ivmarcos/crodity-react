@@ -41,6 +41,6 @@ RoundFontIcon.defaultProps = {
 };
 
 // render once
-// RoundFontIcon.shouldComponentUpdate = () => false;
+RoundFontIcon.shouldComponentUpdate = () => false;
 
 export default RoundFontIcon;
