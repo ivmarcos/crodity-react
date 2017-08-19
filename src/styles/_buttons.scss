@@ -6,6 +6,8 @@ $crodity-secondary-color: #dbbb55;
 
 @mixin crodity-login-button($color){
 
+  $hover-color: lighten($color, 5);
+
   & button{
 
    
@@ -14,13 +16,21 @@ $crodity-secondary-color: #dbbb55;
       background-color: $color;
       height: auto !important;
 
+      //hover effect
       &:hover{
-        background-color: lighten($color, 5)
+        background-color: $hover-color;
+
+        //change hover of icon child too
+        & i {
+          color: $hover-color !important;      
+        }
+
       }
 
-      //icon position
+      //icon definitions, when existing as child of button
       & i {
         margin-left: 16px;
+        color: $color;
       }
 
       & span {
