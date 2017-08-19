@@ -13,7 +13,7 @@ const LoginScene = () => (
 
       <LoginSocialButton
         label="connect with facebook"
-        className="crd-btn-fb"
+        className="crd-btn-login-facebook"
       />
 
     </div>
