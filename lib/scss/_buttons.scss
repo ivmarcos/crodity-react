@@ -4,50 +4,57 @@ $crodity-fb-background: #2b3958;
 $crodity-email-background: #8faab6;
 $crodity-secondary-color: #dbbb55;
 
+// override material-ui styles
 @mixin crodity-login-button($color){
-
+  //border-radius: $crodity-login-button-login-radius !important;
   & button{
-
-   
+    //border-radius:  $crodity-login-button-login-radius !important;
+    //height: auto !important;
+    & :hover{
+      background-color: lighten($color, 10)
+    }
     & div {
       border-radius:  $crodity-login-button-login-radius !important;
       background-color: $color;
       height: auto !important;
-
-      &:hover{
-        background-color: lighten($color, 5)
-      }
-
       //icon position
       & i {
         margin-left: 16px;
       }
-
       & span {
         border-radius:  $crodity-login-button-login-radius !important;
+        @if ($color == white) {
+          color: black;
+        }else{
+          color: white;
+        }
+        //font-weight: 600 !important;
       }
-
+      & div{ 
+        //border-radius:  $crodity-login-button-login-radius;
+         //padding: 15px;
+      }
     }
   }
 }
 
-.crd-btn-login{
+.crd-btn{
   @include crodity-login-button(white);
 }
 
-.crd-btn-login-twitter{
+.crd-btn-twitter{
   @include crodity-login-button($crodity-twitter-background);
 }
 
-.crd-btn-login-facebook{
+.crd-btn-fb{
   @include crodity-login-button($crodity-fb-background);
 }
 
-.crd-btn-login-email{
+.crd-btn-email{
   @include crodity-login-button($crodity-email-background);
 }
 
-.crd-btn-login-sign{
+.crd-btn-sign{
   @include crodity-login-button($crodity-secondary-color);
 }
 

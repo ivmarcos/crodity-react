@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RaisedButton from 'material-ui/RaisedButton';
 
-import '../styles/_buttons.scss';
-
 const DEFAULT_HEIGHT = 70;
 const DEFAULT_RADIUS = 40;
 
@@ -48,7 +46,7 @@ LoginButton.propTypes = {
 };
 
 LoginButton.defaultProps = {
-  className: 'crd-btn',
+  className: 'crd-btn-login',
   style: styles.style,
   buttonStyle: styles.button,
   labelStyle: styles.label,

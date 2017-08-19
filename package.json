@@ -1,6 +1,6 @@
 {
   "name": "crodity-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React elements for Crodity",
   "private": true,
   "scripts": {
@@ -8,10 +8,10 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "start": "yarn run styleguide",
-    "build": "yarn run styleguide:build",
-    "build:modules": "babel ./src -d ./lib",
+    "build": "babel ./src -d ./lib",
     "release": "yarn version --new-version patch",
     "dev": "nodemon --watch src --exec 'yarn start'",
+    "prerelease": "yarn build",
     "preversion": "yarn test",
     "version": "git add --all",
     "postversion": "git push"
