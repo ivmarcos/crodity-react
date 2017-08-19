@@ -20,4 +20,7 @@ LoginSocialButton.defaultProps = {
   className: null,
 };
 
+// render once
+LoginSocialButton.shouldComponentUpdate = () => false;
+
 export default LoginSocialButton;

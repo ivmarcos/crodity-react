@@ -1,8 +1,8 @@
-$crodity-login-button-login-radius: 30px;
-$crodity-twitter-background: #30acf7;
-$crodity-fb-background: #0038bb;
-$crodity-email-background: #989898;
-$crodity-secondary-color: #FFEB3B;
+$crodity-login-button-login-radius: 40px;
+$crodity-twitter-background: #0486b2;
+$crodity-fb-background: #2b3958;
+$crodity-email-background: #8faab6;
+$crodity-secondary-color: #dbbb55;
 
 // override material-ui styles
 @mixin crodity-login-button($color){
@@ -13,6 +13,11 @@ $crodity-secondary-color: #FFEB3B;
     & div {
       border-radius:  $crodity-login-button-login-radius !important;
       background-color: $color;
+      height: auto !important;
+      //icon position
+      & i {
+        margin-left: 16px;
+      }
       & span {
         border-radius:  $crodity-login-button-login-radius !important;
         @if ($color == white) {
@@ -24,7 +29,7 @@ $crodity-secondary-color: #FFEB3B;
       }
       & div{ 
         //border-radius:  $crodity-login-button-login-radius;
-         padding: 15px;
+         //padding: 15px;
       }
     }
   }

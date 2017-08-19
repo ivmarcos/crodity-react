@@ -10,6 +10,7 @@
     "start": "yarn run styleguide",
     "build": "yarn run styleguide:build",
     "release": "yarn version --new-version patch",
+    "dev": "nodemon --watch src --exec 'yarn start'",
     "preversion": "mocha",
     "version": "git add --all",
     "postversion": "git push"

@@ -4,23 +4,28 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import '../styles/_buttons.scss';
 
+const DEFAULT_HEIGHT = 70;
+const DEFAULT_RADIUS = 40;
+
 const styles = {
   button: {
     height: 'auto',
-    borderRadius: 30,
+    lineHeight: `${DEFAULT_HEIGHT}px`,
+    borderRadius: DEFAULT_RADIUS,
   },
   overlay: {
-    padding: 10,
-    borderRadius: 30,
+    padding: DEFAULT_RADIUS / 2,
+    borderRadius: DEFAULT_RADIUS,
+    height: 'auto',
   },
   label: {
     color: 'white',
   },
   style: {
-    borderRadius: 30,
+    borderRadius: DEFAULT_RADIUS,
   },
   ripple: {
-    borderRadius: 30,
+    borderRadius: DEFAULT_RADIUS,
     backgroundColor: 'white',
   },
 };
@@ -49,5 +54,8 @@ LoginButton.defaultProps = {
   labelStyle: styles.label,
   rippleStyle: styles.ripple,
 };
+
+// render once
+LoginButton.shouldComponentUpdate = () => false;
 
 export default LoginButton;
