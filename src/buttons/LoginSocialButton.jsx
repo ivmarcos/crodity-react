@@ -3,17 +3,19 @@ import PropTypes from 'prop-types';
 import LoginButton from './LoginButton';
 import RoundFontIcon from '../icons/RoundFontIcon';
 
+const DEFAULT_CLASSNAME_PREFIX = 'crd-btn-login';
+
 const TypeInfo = {
   facebook: {
-    className: 'crd-btn-login-facebook',
+    className: `${DEFAULT_CLASSNAME_PREFIX}-facebook`,
     iconClassName: 'fa fa-facebook',
   },
   twitter: {
-    className: 'crd-btn-login-twitter',
+    className: `${DEFAULT_CLASSNAME_PREFIX}-twitter`,
     iconClassName: 'fa fa-twitter',
   },
   email: {
-    className: 'crd-btn-login-email',
+    className: `${DEFAULT_CLASSNAME_PREFIX}-email`,
     iconClassName: 'fa fa-envelope-o',
   },
 };
@@ -24,7 +26,7 @@ const LoginSocialButton = ({ type, className, iconClassName, withIcon, children,
 
   const icon = withIcon ? <RoundFontIcon className={iconClassName || typeInfo.iconClassName} /> : null;
 
-  const buttonClassName = ['crd-btn-login', typeInfo.className, className].map(c => c || '').join(' ');
+  const buttonClassName = [DEFAULT_CLASSNAME_PREFIX, typeInfo.className, className].map(c => c || '').join(' ');
 
   return (
     <LoginButton

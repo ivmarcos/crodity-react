@@ -4,6 +4,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 const DEFAULT_HEIGHT = 70;
 const DEFAULT_RADIUS = 40;
+const DEFAULT_CLASSNAME_PREFIX = 'crd-btn-login';
+const DEFAULT_CLASSNAME = `${DEFAULT_CLASSNAME_PREFIX} ${DEFAULT_CLASSNAME_PREFIX}-sign`;
 
 const styles = {
   button: {
@@ -46,7 +48,7 @@ LoginButton.propTypes = {
 };
 
 LoginButton.defaultProps = {
-  className: 'crd-btn-login-sign',
+  className: DEFAULT_CLASSNAME,
   style: styles.style,
   buttonStyle: styles.button,
   labelStyle: styles.label,
