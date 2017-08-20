@@ -10,58 +10,49 @@ Facebook
 ```jsx
 <LoginSocialButton
   label="connect with facebook"
-  className="crd-btn-login-facebook"
+  type="facebook"
 />
 ```
 
 Facebook with icon
 ```jsx
-const RoundFontIcon = require('../icons/RoundFontIcon').default;
-
 <LoginSocialButton
   label="connect with facebook"
-  className="crd-btn-login-facebook"
->
-  <RoundFontIcon className="fa fa-facebook"/>
-</LoginSocialButton>
+  type="facebook"
+  withIcon
+/>
 ```
 
 Twitter
 ```jsx
 <LoginSocialButton
   label="connect with twitter"
-  className="crd-btn-login-twitter"
+  type="twitter"
 />
 ```
 
 Twitter with icon
 ```jsx
-const RoundFontIcon = require('../icons/RoundFontIcon').default;
-
 <LoginSocialButton
   label="connect with twitter"
-  className="crd-btn-login-twitter"
->
-  <RoundFontIcon className="fa fa-twitter" />
-</LoginSocialButton>
+  type="twitter"
+  withIcon
+/>
 ```
 
 Email
 ```jsx
 <LoginSocialButton
-  label="connect with e-mail"
-  className="crd-btn-login-email"
+  label="connect with email"
+  type="email"
 />
 ```
 
 Email with icon
 ```jsx
-const RoundFontIcon = require('../icons/RoundFontIcon').default;
-
 <LoginSocialButton
-  label="connect with e-mail"
-  className="crd-btn-login-email"
->
-  <RoundFontIcon className="fa fa-envelope-o"/>
-</LoginSocialButton>
+  label="connect with email"
+  type="email"
+  withIcon
+/>
 ```
