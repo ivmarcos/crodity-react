@@ -1,10 +1,3 @@
-```jsx
-<LoginSocialButton
-  className="crd-btn-login-sign"
->
-  Sign in
-</LoginSocialButton>
-```
 
 Facebook
 ```jsx

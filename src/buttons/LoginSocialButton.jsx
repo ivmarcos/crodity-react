@@ -20,11 +20,11 @@ const TypeInfo = {
 
 const LoginSocialButton = ({ type, className, iconClassName, withIcon, children, ...props }) => {
 
-  const typeInfo = TypeInfo[type];
+  const typeInfo = TypeInfo[type] || {};
 
   const icon = withIcon ? <RoundFontIcon className={iconClassName || typeInfo.iconClassName} /> : null;
 
-  const buttonClassName = ['crd-btn-login', className, typeInfo.className].map(c => c || null).join(' ');
+  const buttonClassName = ['crd-btn-login', typeInfo.className, className].map(c => c || '').join(' ');
 
   return (
     <LoginButton

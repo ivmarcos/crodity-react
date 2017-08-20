@@ -46,7 +46,7 @@ LoginButton.propTypes = {
 };
 
 LoginButton.defaultProps = {
-  className: undefined,
+  className: 'crd-btn-login-sign',
   style: styles.style,
   buttonStyle: styles.button,
   labelStyle: styles.label,
